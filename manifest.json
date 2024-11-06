@@ -1,0 +1,21 @@
+{
+    "name": "VCSA Bandaid",
+    "version": "1.0",
+    "description": "Enables LOGIN button",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://vcsa.silacins.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "manifest_version": 2
+}
